@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <script src="cal.js"></script>
+    <div class="calculator">
+    <form name="foims">
+        <input type="text" name="output" readonly>
+        <input type="button" class="Clear" value="C"onclick="document.foims.output.value = ''">
+        <input type="button" class="operator" value="/"onclick="document.foims.output.value += '/'">
+        <input type="button" value="1"onclick="document.foims.output.value += '1'">
+        <input type="button" value="2"onclick="document.foims.output.value += '2'">
+        <input type="button" value="3"onclick="document.foims.output.value += '3'">
+        <input type="button" class="operator" value="*" onclick="document.foims.output.value += '*'">
+        <input type="button" value="4"onclick="document.foims.output.value += '4'">
+        <input type="button" value="5"onclick="document.foims.output.value += '5'">
+        <input type="button" value="6"onclick="document.foims.output.value += '6'">
+        <input type="button" class="operator" value="+"onclick="document.foims.output.value += '+'">
+        <input type="button" value="7"onclick="document.foims.output.value += '7'">
+        <input type="button" value="8"onclick="document.foims.output.value += '8'">
+        <input type="button" value="9"onclick="document.foims.output.value += '9'">
+        <input type="button" class="operator"value="-"onclick="document.foims.output.value += '-'">
+        <input type="button" class="point" value="."onclick="document.foims.output.value += '.'">
+        <input type="button" value="0"onclick="document.foims.output.value += '0'">
+        <input type="button" class="operator result" value="=" onclick="document.foims.output.value = eval(document.foims.output.value)">
+    </form>
+    </div>
+    
+</body>
+</html>
